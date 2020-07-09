@@ -15,7 +15,7 @@ function withTooltip(Component) {
     render() {
       return (
         <div onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
-          <Component {...this.props} showTooltip={this.state.showTooltip} />
+          <Component showTooltip={this.state.showTooltip} />
         </div>
       );
     }
